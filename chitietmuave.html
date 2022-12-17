@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phuc</title>
+    <link rel="stylesheet" href="chittietmuave.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class='bx bxl-c-plus-plus'></i>
+                <div class="logo_name">Bán vé máy bay
+
+                </div>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                        <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search..."  >  
+                     <span class="tooltip">Search</span> 
+                </li>
+                <li>
+                    <a href="###">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Trang chủ</span>    
+                    </a>
+                     <span class="tooltip">Dashboard</span> 
+                </li>
+                <li>
+                    <a href="###">
+                        <i class='bx bx-user' ></i>                    
+                        <span class="links_name">Quản lý mua vé</span>
+                         
+                    </a>
+                     <span class="tooltip">User</span> 
+                </li>
+                <li>
+                    <a href="###">
+                        <i class='bx bx-message-rounded' ></i>
+                    <span class="links_name">Quản lý nhân viên</span>    
+                    </a>
+                     <span class="tooltip">Message</span> 
+                </li>
+                <li>
+                    <a href="###">
+                        <i class='bx bx-pie-chart-alt' ></i>
+                    <span class="links_name">Quản lý chuyến bay</span>    
+                    </a>
+                     <span class="tooltip">Anglytics</span> 
+                </li>
+                <li>
+                    <a href="###">
+                        <i class='bx bx-folder' ></i>
+                    <span class="links_name">Quản lý vé chuyến bay</span>    
+                    </a>
+                     <span class="tooltip">File manager</span> 
+                </li>
+                <li>
+                    <a href="###">
+                        <i class='bx bx-cart' ></i>
+                    <span class="links_name">Thống kê doanh thu</span>    
+                    </a>
+                     <span class="tooltip">Oder</span> 
+                </li>
+                <li>
+                    <a href="###">
+                        <i class='bx bx-heart' ></i>
+                    <span class="links_name">Quy định công ty</span>    
+                    </a>
+                     <span class="tooltip">Saved</span> 
+                </li>
+                
+            </ul>
+            <div class="profile-content">
+                <div class="profile">
+                    <div class="profile-details">
+                    <img src="hathu.jpg" alt=""> 
+                     <div class="name-job">
+                         <div class="name">Hồng Phúc</div>
+                         <div class="job">Lập trình viên</div>
+                     </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </div>
+            </div>
+        </div>       
+    </div>
+    
+    <div class="center">
+        <div class="tieude">Thông tin khách hàng</div>
+        <div class="thongtin">
+            <div class="ten-tuoi">
+                <div class="ho-ten">Họ và tên
+                    <div class="hvt">Lê Văn A</div>
+                </div>
+                <div class="tuoi">Tuổi
+                    <div class="hvt">46</d></div>
+            </div>
+            <div class="quoctich-cmnd">
+                <div class="quoctich">Quốc tịch
+                    <div class="hvt">Việt Nam</div>
+                </div>
+                <div class="cmnd">Cmnd
+                    <div class="hvt">220119456</div>
+                </div>
+            </div>
+            <div class="di-den">
+                <div class="noidi">Nơi đi
+                    <div class="hvt3">Thành Phố Hồ Chí Minh</div>
+                </div>
+                <div class="noiden">Nơi đến
+                    <div class="hvt">Mỹ</div>
+                </div>
+            </div>
+            <div class="ngaydi-giodi">
+                <div class="ngaydi">Ngày đi
+                    <div class="hvt" style="padding: 2px 95px;">25/12/2000</div>
+                </div>
+                <div class="giodi">Giờ đi
+                    <div class="hvt">20h00'</div>
+                </div>
+            </div>
+            <div class="nguoidi">
+                <div class="nguoilon">Người lớn
+                    <div class="hvt1">1</div>
+                </div>
+                <div class="treem">Trẻ em
+                    <div class="hvt1">1</div>
+                </div>
+                <div class="embe">Em bé
+                    <div class="hvt1">0</div>
+                </div>
+            </div>
+            <div class="hangve-tien">
+                <div class="hangve">Hạng vé
+                    <div class="hvt">Cao Cấp</div>
+                </div>
+                <div class="tien">Tiền
+                    <div class="hvt">40tr</div>
+                </div>
+            </div>
+            <div class="ghichu-button">
+                <div class="ghichu">Ghi chú
+                    <div class="hvt">Cám ơn vì đã theo dõi</div>
+                </div>
+                <div class="buttonn">
+                    <div class="hvt2">Trở về</div>
+                    <div class="hvt2">Đăng kí</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar= document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        search.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
